@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\My Assignments\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\MyAssignment\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary.csproj",
       "projectName": "ConsoleAppForClassLibrary",
-      "projectPath": "C:\\Users\\Admin\\Documents\\My Assignments\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\MyAssignment\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\My Assignments\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\MyAssignment\\ConsoleAppForClassLibrary\\ConsoleAppForClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

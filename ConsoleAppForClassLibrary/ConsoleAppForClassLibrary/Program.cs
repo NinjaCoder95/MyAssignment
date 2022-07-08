@@ -6,6 +6,10 @@ class Program
     {
         Demo d = new Demo();
         d.Message();
-        Console.WriteLine(d.counter("qwertyuiop"));
+        LengthCounter obj = new LengthCounter();
+        String x = Console.ReadLine();
+        Console.WriteLine(obj.counter(x));
+
+;
     }
 }
