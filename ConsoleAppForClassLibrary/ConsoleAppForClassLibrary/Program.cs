@@ -1,6 +1,13 @@
 ﻿using ClassLibrary;
 
-class Program
+static class Extension
+{
+    public static void Welcome(this Program2 p)
+    {
+        Console.WriteLine("My Name is Madhur");
+    }
+}
+public class Program
 {
     public static void Main(String[] args)
     {
@@ -21,5 +28,10 @@ class Program
         counter.Print();
         counter.Decrement();
         counter.Print();
+
+        Console.WriteLine("Assignment 4");
+        Program2 p = new Program2();
+        p.Greeting();
+        p.Welcome();
     }
 }
