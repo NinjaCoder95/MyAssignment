@@ -1,7 +1,5 @@
 ﻿namespace ClassLibrary
 {
-
-
         public class Demo
         {
             public void Message()
