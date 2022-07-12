@@ -33,5 +33,14 @@ public class Program
         Program2 p = new Program2();
         p.Greeting();
         p.Welcome();
+
+        Console.WriteLine("Assignment 5");
+        string s;
+        ConsoleReader cs = new ConsoleReader();
+        Console.Write("Write input continuously: ");
+        while ((s = Console.ReadLine()) != null)
+        {
+            cs.Run(s, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+        }
     }
 }
