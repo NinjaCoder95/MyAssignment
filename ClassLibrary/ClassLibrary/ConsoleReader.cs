@@ -3,13 +3,12 @@ using System.Text.RegularExpressions;
 
 namespace ClassLibrary;
 
-public delegate string word();
-public delegate string number();
-public delegate string junk();
+public delegate string OneDelegate();
+
 public class ConsoleReader
 {
 
-    public string Run(string s, word w, number n, junk j)
+    public string Run(string s, OneDelegate w, OneDelegate n, OneDelegate j)
     {
 
         Regex specialChar = new Regex("[^A-Za-z0-9]");
