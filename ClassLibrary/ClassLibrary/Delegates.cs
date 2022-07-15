@@ -2,22 +2,22 @@
 {
     public class Delegates
     {
-
-        public static string OnNumber()
+        
+        public static void OnNumber(string msg)
         {
             Console.WriteLine("On Number");
-            return "Integer";
+           
         }
-        public static string OnWord()
+        public static void OnWord(string msg)
         {
             Console.WriteLine("On String");
-            return "String";
+            
         }
 
-        public static string OnJunk()
+        public static void OnJunk(string msg)
         {
             Console.WriteLine("On Junk");
-            return "Special Character";
+            
         }
 
     }

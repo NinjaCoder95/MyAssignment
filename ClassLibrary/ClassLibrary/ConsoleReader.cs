@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace ClassLibrary;
 
-public delegate string OneDelegate();
+public delegate void OneDelegate(string msg);
 
 public class ConsoleReader
 {
@@ -19,15 +19,15 @@ public class ConsoleReader
             int tryInt;
             if (Int32.TryParse(s, out tryInt))
             {
-                n();
+                n("Integer");
             }
             else if (hasSpecialChars)
             {
-               j();
+               j("Junk");
             }
             else
             {
-               w();
+               w("Word");
             }
 
         }
