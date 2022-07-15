@@ -1,6 +1,6 @@
 ﻿namespace ClassLibrary
 {
-    public class Delegates
+    public class DelegatesAssignment
     {
         
         public static void OnNumber(string msg)

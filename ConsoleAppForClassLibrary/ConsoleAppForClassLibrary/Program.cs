@@ -40,7 +40,7 @@ public class Program
         Console.Write("Write input continuously: ");
         while ((s = Console.ReadLine()) != null)
         {
-            cs.Run(s, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            cs.Run(s, DelegatesAssignment.OnWord, DelegatesAssignment.OnNumber, DelegatesAssignment.OnJunk);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using static ClassLibrary.Delegates;
+﻿using static ClassLibrary.DelegatesAssignment;
 using System.Text.RegularExpressions;
 
 namespace ClassLibrary;

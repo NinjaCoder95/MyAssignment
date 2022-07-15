@@ -13,7 +13,7 @@ namespace TestProject
         {
             var input = "Madhur";
             ConsoleReader obj = new ConsoleReader();
-            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            var expected = obj.Run(input, DelegatesAssignment.OnWord, DelegatesAssignment.OnNumber, DelegatesAssignment.OnJunk);
             Assert.Equal("Word",expected);
         }
 
@@ -22,7 +22,7 @@ namespace TestProject
         {
             var input = "12345";
             ConsoleReader obj = new ConsoleReader();
-            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            var expected = obj.Run(input, DelegatesAssignment.OnWord, DelegatesAssignment.OnNumber, DelegatesAssignment.OnJunk);
             Assert.Equal("Integer", expected);
         }
 
@@ -31,7 +31,7 @@ namespace TestProject
         {
             var input = "hshs@123";
             ConsoleReader obj = new ConsoleReader();
-            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            var expected = obj.Run(input, DelegatesAssignment.OnWord, DelegatesAssignment.OnNumber, DelegatesAssignment.OnJunk);
             Assert.Equal("Junk", expected);
         }
 
@@ -40,7 +40,7 @@ namespace TestProject
         {
             var input = "";
             ConsoleReader obj = new ConsoleReader();
-            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            var expected = obj.Run(input, DelegatesAssignment.OnWord, DelegatesAssignment.OnNumber, DelegatesAssignment.OnJunk);
             Assert.Equal("Invalid Input", expected);
         }
     }
