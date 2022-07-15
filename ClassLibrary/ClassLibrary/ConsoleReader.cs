@@ -20,18 +20,21 @@ public class ConsoleReader
             if (Int32.TryParse(s, out tryInt))
             {
                 n("Integer");
+                return "Integer";
             }
             else if (hasSpecialChars)
             {
                j("Junk");
+                return "Junk";
             }
             else
             {
                w("Word");
+                return "Word";
             }
 
         }
-        return null;
+        return "Invalid Input";
 
     }
 

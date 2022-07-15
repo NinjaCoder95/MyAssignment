@@ -8,12 +8,40 @@ namespace TestProject
     public class ConsoleReaderTest
     {
 
-        ConsoleReader obj = new ConsoleReader();
         [Fact]
-        public void Test()
+        public void Word()
         {
-            Assert.Equal("Madhur", obj.Run("Madhur", Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk));
+            var input = "Madhur";
+            ConsoleReader obj = new ConsoleReader();
+            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            Assert.Equal("Word",expected);
         }
 
+        [Fact]
+        public void Integer()
+        {
+            var input = "12345";
+            ConsoleReader obj = new ConsoleReader();
+            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            Assert.Equal("Integer", expected);
+        }
+
+        [Fact]
+        public void Junk()
+        {
+            var input = "hshs@123";
+            ConsoleReader obj = new ConsoleReader();
+            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            Assert.Equal("Junk", expected);
+        }
+
+        [Fact]
+        public void Invalid()
+        {
+            var input = "";
+            ConsoleReader obj = new ConsoleReader();
+            var expected = obj.Run(input, Delegates.OnWord, Delegates.OnNumber, Delegates.OnJunk);
+            Assert.Equal("Invalid Input", expected);
+        }
     }
 }
